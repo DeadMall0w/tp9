@@ -50,6 +50,7 @@ void affecterElt(T_Elt *d,T_Elt *s)
 
 
 
+
 // lorsque T_ELt est une chaine (peut être un jour)
 
 /*

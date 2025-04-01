@@ -47,9 +47,53 @@ switch (chx)
 		//scanf("%d",&taille);//taille echiquier <=MAX
 		//echiquier(&mapile,taille); //TP9 partie 3: ecrire echiquier
 		break;
+	case 20:
+		//* Initialiser la pile
+		initFile(&mafile);
+		// T_Elt un = 1;
+		// T_Elt trois = 3;
+		// T_Elt cinq = 5;
 
+		// ajouter(&mafile, &un);
+		// ajouter(&mafile, &trois);
+		// ajouter(&mafile, &cinq);
+		for (int i = 0; i < 3; i++)
+		{
+			T_Elt e;
+			printf("Entrer une valeur à ajouter : ");
+			saisirElt(&e);
+			ajouter(&mafile, &e);
+			debugFile(&mafile);	
+		}
+		
 
-
+		// TODO : code de bebug
+		break;
+	case 21:
+		//* Ajouter un element da la pile
+		T_Elt e;
+		printf("Entrer une valeur à ajouter : ");
+		saisirElt(&e);
+		ajouter(&mafile, &e);
+		break;
+	case 22:
+		//* Défiler un élément
+		T_Elt te;
+		int result = retirer(&mafile, &te);
+		if (result ==0)
+			afficherElt(&te);
+		break;
+	case 23:
+		//* Renvoie 1 ou 0 si la file est vide ou pas
+		printf("Etat de remplissage de la pile : %d \n", fileVide(&mafile));
+		break;
+	case 24:
+		printf("File pleine ? %d \n", filePleine(&mafile));
+		
+		break;
+	case 29:
+		debugFile(&mafile);
+		break;
 	}
 }while(chx!=0);
 
