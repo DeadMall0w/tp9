@@ -1,7 +1,7 @@
 #include "file.h" 
 
 
-
+// Utilisait pour déboguer 
 void debug(char *c){
     // printf("[DEBUG] %s \n", c);
 }

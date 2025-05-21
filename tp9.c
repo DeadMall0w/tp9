@@ -166,10 +166,6 @@ switch (chx)
 		res = retirer(&mafile, &te);
 		afficherElt(&te);
 
-		
-
-
-
 
 		break; 
 	case 3 : 
